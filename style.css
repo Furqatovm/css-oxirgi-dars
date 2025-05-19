@@ -209,6 +209,9 @@ main{
     padding: 20px;
     border-radius: 10px;
     align-items: center;
+    max-width: 400px;
+    width: 100%;
+    max-height: 80px;
 }
 
 .name{
@@ -220,6 +223,9 @@ main{
     text-align: left;
 }
 
+.play-right .matn{
+    margin-bottom: 0;
+}
 .wrapper-browsers{
     display: flex;
     flex-direction: column;
@@ -314,4 +320,190 @@ main{
 .map-rasm{
     width: 100%;
     margin-top: 4rem;
+}
+
+.quote{
+    background-color: #fff;
+    color: #252B42;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 600;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 2.5rem;
+}
+
+input, select{
+    width: 100%;
+    padding: 11px;
+    border-radius: 5px;
+    border: 2px solid #BDBDBD;
+    text-align: left;
+    color: #252B42;
+    outline: none;
+}
+
+form .tugma{
+    padding: 10px 45px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-sar{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 1rem;
+}
+.wrapper-footer{
+    padding-bottom: 2rem;
+}
+li .matn{
+    margin: 0;
+}
+.madeby{
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.madeby .matn{
+    color: #252B42;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+.madeby .matn:hover{
+    border-bottom: 2px solid #252B42;
+}
+
+
+
+
+@media (min-width: 768px){
+    .hero{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-sarlavha{
+        font-size: 58px;
+        max-width: 100%;
+        margin: 0;
+    }
+    .matn{
+        margin: 0;
+        max-width: 500px;
+    }
+    .hero-left{
+        width: 45%;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero-footer{
+        width: 45%;
+    }
+    .wrapper-btns{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .wrapper-strategy{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .strategy-1{
+        width: 32%;
+        border: 2px solid #737373;
+    }
+    .secondary-sarlavha{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        max-width: 500px;
+    }
+    .matn{
+        text-align: center;
+    }
+    .strategy, .clients, .download, .pricing, .map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .client{
+        width: 70%;
+    }
+    .wrapper-browsers{
+        max-width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .wrapper-cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .map{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-top: 4rem;
+    }
+    .map-left{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .map-right{
+        width: 45%;
+    }
+    .quote-left{
+        width: 100%;
+    }
+    .quote{
+        max-width: 1250px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form .main-sarlavha{
+        font-size: 24px;
+        text-align: center;
+    }
+    .wrapper-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    li .matn{
+        text-align: left;
+    }
+
 }
