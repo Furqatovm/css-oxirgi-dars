@@ -10,21 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container">
+    <header class="container" id="header1">
         <div class="header-left">
             <a href="/" class="logo">BrandName</a>
         </div>
         <div class="header-right">
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentcolor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentcolor"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentcolor"><path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            <nav class="mobile">
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentcolor"><path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+    </header>
+            <nav class="mobile" id="mobile">
+                <a href="#" class="nav-child chil">Home</a>
+                <a href="#" class="nav-child chil">Product</a>
+                <a href="#" class="nav-child chil">Pricing</a>
+                <a href="#" class="nav-child chil">Contact</a>
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentcolor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </nav>
+    <header class="container" id="header2">
+        <div class="header-left">
+            <a href="/" class="logo">BrandName</a>
+        </div>
+        <div class="header-right">
+            <nav class="header-nav">
                 <a href="#" class="nav-child">Home</a>
                 <a href="#" class="nav-child">Product</a>
                 <a href="#" class="nav-child">Pricing</a>
                 <a href="#" class="nav-child">Contact</a>
             </nav>
         </div>
+
+        <header class="end">
+            <a href="#" class="login nav-child">login</a>
+            <button class="tugg">Become a member</button>
+        </header>
     </header>
 
     <section class="hero container">
@@ -40,7 +59,7 @@
         </div>
 
         <div class="hero-footer">
-            <img src="browsers/col-md-6.png" alt="" class="hero-rasm">
+            <img src="browsers/saved.png" alt="" class="hero-rasm">
         </div>
 
 
@@ -272,29 +291,34 @@
        
     </section>
 
-    <section class="quote">
-        <div class="quote-left">
-            <img src="browsers/rasmmm.png" alt="" class="rasm">
-        </div>
-        <form class="quote-left">
-            <h4 class="main-sarlavha">Get A Free 
-                Quote Here</h4>
+    <seciton class="wrapper-quote">
 
-                <label for="name">Name*</label>
-                <input type="text" name="name" id="name" placeholder="Full Name" autocapitalize="on" autocomplete="off">
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com" autocapitalize="on" autocomplete="off">
-                <label for="department">Department*</label>
-                <select name="department" id="department">
-                    <option value="first">first</option>
-                    <option value="first">first</option>
-                    <option value="first">first</option>
-                </select>
-                <label for="time">Timezone*</label>
-                <input type="time" id="time">
-                <button class="tugma">Book Appointment</button>
-        </form>
-    </section>
+        <section class="quote">
+            <div class="quote-left">
+                <img src="browsers/rasmmm.png" alt="" class="rasm">
+            </div>
+            <form class="quote-left">
+                <h4 class="main-sarlavha">Get A Free 
+                    Quote Here</h4>
+    
+                    <label for="name">Name*</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" autocapitalize="on" autocomplete="off">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" autocapitalize="on" autocomplete="off">
+                    <label for="department">Department*</label>
+                    <select name="department" id="department">
+                        <option value="first">first</option>
+                        <option value="first">first</option>
+                        <option value="first">first</option>
+                    </select>
+                    <label for="time">Timezone*</label>
+                    <input type="time" id="time">
+                    <button class="tugma">Book Appointment</button>
+            </form>
+        </section>
+
+    </seciton>
+
 
     <footer>
         <ul class="wrapper-footer container">
@@ -347,6 +371,25 @@
     <div class="madeby">
         <a href="#" class="matn">Made by Muhammadyusuf</a>
     </div>
+
+
+
+    <script>
+        let navv = document.getElementById("mobile");
+        let menu = document.getElementById("menu");
+        let closee =document.getElementById("close");
+        let headerr =document.querySelector("header")
+
+        menu.addEventListener("click", function() {
+        navv.classList.toggle("active");
+        closee.classList.toggle("close");
+        });
+
+        closee.addEventListener("click", function(){
+            navv.classList.remove("active");
+        })
+
+    </script>
 
 </body>
 </html>

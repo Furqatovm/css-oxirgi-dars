@@ -392,6 +392,54 @@ li .matn{
 .madeby .matn:hover{
     border-bottom: 2px solid #252B42;
 }
+#header1{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #252B42;
+    border-bottom: 1px solid #8EC2F2;
+}
+
+#header2{
+    display: none;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #252B42;
+    border-left: 2px solid #23A6F0;
+    right: 0;
+    top: 0;
+    width: 60vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+}
+
+.chil{
+    text-decoration: none;
+    color: #fff;
+}
+
+.map{
+    margin-top: 5rem;
+}
+
+.pricing{
+    margin-top: 5rem;
+}
+
+button{
+    cursor: pointer;
+}
 
 
 
@@ -490,6 +538,7 @@ li .matn{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     form .main-sarlavha{
         font-size: 24px;
@@ -505,5 +554,56 @@ li .matn{
     li .matn{
         text-align: left;
     }
+    .play{
+        gap: 1rem;
+    }
+
+    .wrapper-quote{
+        background-color: white;
+    }
+    
+    #header1{
+        display: none;
+    }
+    #header2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #252B42;
+        z-index: 10;
+    }
+
+    .header-nav{
+        display: flex;
+        gap: 1rem;
+    }
+    .nav-child{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .tugg{
+        padding: 15px 25px;
+        background-color: #23A6F0;
+        border-color: transparent;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    .end{
+        display: flex;
+        gap: 1rem;
+    }
+    .hero{
+        padding-top: 3rem;
+    }
+    .pricing, .download, .map, .quote, .client{
+        margin-top: 6rem;
+    }
+    
 
 }
